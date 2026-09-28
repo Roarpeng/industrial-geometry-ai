@@ -1,0 +1,24 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ===== 合成数据集（约 4.6 G，可由 generate.py 按 seed 复现）=====
+# 复现方式见 industrial-geometry-ai/README.md 与 run_phase0.sh
+industrial-geometry-ai/data/
+
+# ===== GraphFlow 图谱与索引缓存（约 10 M，本地代码索引工具产物）=====
+graphflow-out/
+.graphflow-cache/
+
+# ===== 本地真实测试图与阈值复核结果 =====
+test_imgs/
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+.DS_Store

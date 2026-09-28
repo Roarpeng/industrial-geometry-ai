@@ -1,0 +1,26 @@
+{
+  "types": [
+    "triangle",
+    "rectangle",
+    "star",
+    "line"
+  ],
+  "type_to_index": {
+    "triangle": 0,
+    "rectangle": 1,
+    "star": 2,
+    "line": 3
+  },
+  "points_per_object": {
+    "triangle": 3,
+    "rectangle": 4,
+    "star": 10,
+    "line": 2
+  },
+  "default_operation": {
+    "triangle": "vertices",
+    "rectangle": "vertices",
+    "star": "vertices",
+    "line": "endpoints"
+  }
+}

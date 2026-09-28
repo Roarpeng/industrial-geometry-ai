@@ -1,0 +1,52 @@
+[
+  {
+    "epoch": 0,
+    "metrics": {
+      "point_recall/triangle": null,
+      "roi_hit/triangle": null,
+      "object_recall/triangle": null,
+      "no_target/triangle": 1.0,
+      "point_recall/rectangle": 0.0,
+      "roi_hit/rectangle": null,
+      "object_recall/rectangle": 0.0,
+      "no_target/rectangle": 1.0,
+      "point_recall/star": 0.0,
+      "roi_hit/star": null,
+      "object_recall/star": 0.0,
+      "no_target/star": null,
+      "point_recall/line": 0.0,
+      "roi_hit/line": null,
+      "object_recall/line": 0.0,
+      "no_target/line": null,
+      "point_recall": 0.0,
+      "roi_hit": null,
+      "object_recall": 0.0,
+      "no_target": 1.0
+    }
+  },
+  {
+    "epoch": 1,
+    "metrics": {
+      "point_recall/triangle": null,
+      "roi_hit/triangle": null,
+      "object_recall/triangle": null,
+      "no_target/triangle": 1.0,
+      "point_recall/rectangle": 0.0,
+      "roi_hit/rectangle": null,
+      "object_recall/rectangle": 0.0,
+      "no_target/rectangle": 1.0,
+      "point_recall/star": 0.0,
+      "roi_hit/star": null,
+      "object_recall/star": 0.0,
+      "no_target/star": null,
+      "point_recall/line": 0.0,
+      "roi_hit/line": null,
+      "object_recall/line": 0.0,
+      "no_target/line": null,
+      "point_recall": 0.0,
+      "roi_hit": null,
+      "object_recall": 0.0,
+      "no_target": 1.0
+    }
+  }
+]

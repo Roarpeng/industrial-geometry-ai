@@ -1,0 +1,17 @@
+{
+  "peak_threshold": 0.1,
+  "nms_kernel": 3,
+  "topk": 1000,
+  "subpixel_power": 4,
+  "roi": {
+    "ratio": 0.1,
+    "min_r": 0.01,
+    "max_r": 0.2
+  },
+  "grouping": {
+    "seed_tol_factor": 0.35,
+    "bidir_tol_factor": 0.25,
+    "correction_rounds": 3
+  },
+  "peak_threshold_note": "swept on full val: tau=0.10 maximizes min(point_recall, roi_hit, no_target)"
+}

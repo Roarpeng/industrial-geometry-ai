@@ -1,0 +1,30 @@
+# 训练超参（对应 V4 方案第 43 节）
+batch_size: 32
+grad_accumulation: 1           # 8GB 放不下时：batch_size 16 + 这里 2
+epochs: 100
+optimizer: adamw
+lr: 2.0e-4
+weight_decay: 1.0e-4
+warmup_epochs: 5
+scheduler: cosine
+amp: true
+bf16: true                     # 不支持 bf16 的卡自动回退 fp16+scaler
+gradient_clip: 1.0
+ema_decay: 0.9999
+num_workers: 4
+seed: 42
+val_interval: 1
+checkpoint_metric: object_recall   # 不以 loss 为准（V4 第 43 节）
+
+loss_weights:
+  heatmap: 1.0
+  offset: 1.0
+  size: 0.3
+  objectness: 0.2
+
+focal:
+  alpha: 2
+  beta: 4
+
+data_dir: data/synthetic
+out_dir: out/train

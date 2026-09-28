@@ -1,0 +1,31 @@
+# Phase 0 正式训练（V4 执行顺序 [4]）：5.8K 数据 × 100 epochs
+batch_size: 32
+grad_accumulation: 1
+epochs: 100
+optimizer: adamw
+lr: 2.0e-4
+weight_decay: 1.0e-4
+warmup_epochs: 5
+scheduler: cosine
+amp: true
+bf16: true
+gradient_clip: 1.0
+ema_decay: 0.9999
+num_workers: 6
+seed: 42
+val_interval: 3        # 长跑控开销：每 3 epoch 验证一次
+val_limit: 250         # 验证集上限（最终评估用全量）
+checkpoint_metric: object_recall
+
+loss_weights:
+  heatmap: 1.0
+  offset: 1.0
+  size: 0.3
+  objectness: 0.2
+
+focal:
+  alpha: 2
+  beta: 4
+
+data_dir: data/stagea,data/stageb,data/phase0_c2,data/phase0_i2
+out_dir: out/phase0

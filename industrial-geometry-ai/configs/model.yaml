@@ -1,0 +1,19 @@
+# 模型结构（对应 V4 方案第 11/12/14 节）
+input_size: [360, 640]        # H, W
+num_types: 4                  # triangle / rectangle / star / line
+head_stride: 4                # heatmap 160×90
+
+backbone:
+  channels: [48, 96, 192, 384]   # s4 / s8 / s16 / s32 通道数
+  block: basic
+
+fpn:
+  lateral_dim: 128            # P3 输出通道
+
+head_fusion:
+  p3_dim: 128
+  skip_dim: 64                # stride-4 浅层 skip 降维通道
+
+heads:
+  hidden_dim: 128
+  objectness_hidden: 64
